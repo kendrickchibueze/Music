@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Music</string>
+    <string name="baroque_music">Gospel</string>
+    <string name="classical_music">Classical</string>
+    <string name="real_music">RealMusic</string>
+    <string name="play_button">Play</string>
+    <string name="pause_button">Pause</string>
+    <string name="stop_button">Stop</string>
+</resources>

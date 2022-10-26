@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary color of the app (shown in the app bar) -->
+    <color name="primary_color">#4a0404</color>
+
+
+    <!-- Primary dark color of the app (shown in the status bar) -->
+    <color name="primary_dark_color">#4f053b</color>
+
+    <!-- Background color for app -->
+    <color name="background">#fff</color>
+
+    <!-- Background color for the baroque category -->
+    <color name="baroque_music">#5d1049</color>
+
+    <!-- Background color for the classical category -->
+    <color name="classical_music">#720d5d</color>
+
+    <!-- Background color for the realmusic category -->
+    <color name="real_music"> #8e3782</color>
+
+    <!-- Background color for buttons -->
+    <color name="play_button">#4f053b</color>
+    <color name="pause_button">#4a0404</color>
+    <color name="stop_button">#5d1049</color>
+
+    <!-- Text color for buttons -->
+    <color name="button_text">#fff</color>
+</resources>
