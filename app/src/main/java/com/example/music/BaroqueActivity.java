@@ -22,26 +22,16 @@ public class BaroqueActivity extends AppCompatActivity implements ListView.OnIte
         ArrayList<Amiwo> amiwos = new ArrayList<Amiwo>();
 
         // Adding opuses to an array.
-        amiwos.add(new Amiwo("Handel",
-                "Water Music, Suite No. 3 in G major, Minuet I, II."));
-        amiwos.add(new Amiwo("Pachelbel",
-                "Canon in D Major"));
-        amiwos.add(new Amiwo("Rameau",
-                "Suite en la Gavotte et six Doubles"));
-        amiwos.add(new Amiwo("Pergolesi",
-                "Stabat Mater Dolorosa "));
-        amiwos.add(new Amiwo("Purcell",
-                "The Cold Song"));
-        amiwos.add(new Amiwo("Telemann",
-                "Concerto in E major for flute, oboe d'amore, viola d'amore & strings"));
-        amiwos.add(new Amiwo("Vinci",
-                "In braccio a mille furie (Semiramide riconosciuta)"));
-        amiwos.add(new Amiwo("Leo",
-                "Mesero pargoletto (Demofoonte)"));
-        amiwos.add(new Amiwo("Porpora",
-                "Passaggier che sulla sponda (Semiramide riconosciuta)"));
-        amiwos.add(new Amiwo("Lully",
-                "Marche pour la cérémonie des Turcs"));
+        amiwos.add(new Amiwo(getString(R.string.artist_holy), getString(R.string.amiwo_gospel)));
+        amiwos.add(new Amiwo(getString(R.string.artist_john), getString(R.string.amiwo_bigger)));
+        amiwos.add(new Amiwo(getString(R.string.artist_kally), getString(R.string.amiwo_noctare)));
+        amiwos.add(new Amiwo(getString(R.string.artist_josh), getString(R.string.amiwo_laughter)));
+        amiwos.add(new Amiwo(getString(R.string.artist_levi), getString(R.string.amiwo_trans)));
+        amiwos.add(new Amiwo(getString(R.string.artist_nath), getString(R.string.amiwo_impromptu)));
+        amiwos.add(new Amiwo(getString(R.string.artist_pet), getString(R.string.amiwo_Life)));
+        amiwos.add(new Amiwo(getString(R.string.artist_max), getString(R.string.amiwo_preach) ));
+        amiwos.add(new Amiwo(getString(R.string.artist_savvy), getString(R.string.amiwo_symphony)));
+        amiwos.add(new Amiwo(getString(R.string.amiwo_liftings), getString(R.string.amiwo_race)));
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the
@@ -73,11 +63,11 @@ public class BaroqueActivity extends AppCompatActivity implements ListView.OnIte
         // Get the selected amiwo.
         Amiwo currentAmiwo = (Amiwo) adapterView.getItemAtPosition(position);
 
-        // Extract strings from Opus object.
+        // Extract strings from Amiwo object.
         String amiwoForPlaying = currentAmiwo.getAmiwo();
         String composerForPlaying = currentAmiwo.getNameOfComposer();
 
-        // Sending the name of composer and his opus to PlayerActivity.
+        // Sending the name of composer and his amiwo to PlayerActivity.
         Intent amiwoIntent = new Intent(this, PlayerActivity.class);
         amiwoIntent.putExtra("amiwo", amiwoForPlaying);
         amiwoIntent.putExtra("composer", composerForPlaying);

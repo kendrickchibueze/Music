@@ -15,8 +15,7 @@ public class Amiwo {
 
     /**
      * Create a new Opus object.
-     *
-     * @param nameOfComposer is the name of composer (in English).
+     *  @param nameOfComposer is the name of composer (in English).
      * @param amiwo          is the name of amiwo.
      */
     public Amiwo(String nameOfComposer, String amiwo) {

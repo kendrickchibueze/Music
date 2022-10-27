@@ -6,4 +6,72 @@
     <string name="play_button">Play</string>
     <string name="pause_button">Pause</string>
     <string name="stop_button">Stop</string>
+
+
+
+
+    <!-- name of composer -->
+    <string name="artist_holy">Kendrick</string>
+
+    <!-- name of composer -->
+    <string name="artist_nath">Nathaniel</string>
+
+    <!-- name of composer -->
+    <string name="artist_savvy">Savvy Micheals</string>
+
+    <!-- name of composer -->
+    <string name="artist_B2strings">B2Strings</string>
+
+    <!-- name of composer -->
+    <string name="artist_max">Maxwell</string>
+
+    <!-- name of composer -->
+    <string name="artist_josh">Joshua</string>
+
+    <!-- name of composer -->
+    <string name="artist_pet">Peters</string>
+
+    <!-- name of composer -->
+    <string name="artist_john">John</string>
+
+    <!-- name of composer -->
+    <string name="artist_levi">Levi</string>
+
+    <!-- name of composer -->
+    <string name="artist_kally">Kally</string>
+
+    <!-- amiwo translation for a song -->
+    <string name="amiwo_symphony">Symphony No.4 in E minor</string>
+
+    <!-- amiwo translation for a song  -->
+    <string name="amiwo_trans">Transcendental forwarding</string>
+
+    <!-- amiwo translation for a song  -->
+    <string name="amiwo_gospel">Nice gospel songs</string>
+
+    <!-- amiwo translation for a song  -->
+    <string name="amiwo_noctare">Nocturne sings of life</string>
+
+    <!--amiwo translation for a song n -->
+    <string name="amiwo_Life">Digging a little deeper</string>
+
+    <!-- amiwo translation for a song  -->
+    <string name="amiwo_liftings">Piano Sonata keeping up the tempo</string>
+
+    <!-- amiwo translation for a song  -->
+    <string name="amiwo_race">Running the race music</string>
+    <!-- amiwo translation for a song  -->
+    <string name="amiwo_preach">Preaching the gospel music</string>
+
+    <!-- amiwo translation for a song  -->
+    <string name="amiwo_impromptu">Impromptu love singing</string>
+
+    <!-- amiwo translation for a song  -->
+    <string name="amiwo_laughter">Make sure you laugh with songs</string>
+
+    <!-- amiwo translation for a song  -->
+    <string name="amiwo_bigger">We are soaring and getting bigger every day</string>
+
+
+
 </resources>

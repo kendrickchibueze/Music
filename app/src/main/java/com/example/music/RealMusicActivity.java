@@ -21,16 +21,16 @@ public class RealMusicActivity extends AppCompatActivity implements ListView.OnI
         ArrayList<Amiwo> amiwos = new ArrayList<Amiwo>();
 
         // Adding opuses to an array.
-        amiwos.add(new Amiwo("Brahms", "Symphony No.4 in E minor"));
-        amiwos.add(new Amiwo("Liszt", "Transcendental Étude no.04 \"Mazeppa\""));
-        amiwos.add(new Amiwo("Liszt", "Liebestraum No. 3, Notturno"));
-        amiwos.add(new Amiwo("Chopin", "Nocturne op.9 No.2"));
-        amiwos.add(new Amiwo("Chopin", "Etude in E minor, Op. 25, No. 5"));
-        amiwos.add(new Amiwo("Schubert", "Piano Sonata No.13 in A-dur"));
-        amiwos.add(new Amiwo("Schubert", "Impromptu Op.90 No.4 in A-flat major"));
-        amiwos.add(new Amiwo("Viardot", "\"Haí Lulí\""));
-        amiwos.add(new Amiwo("Schumann", "Concerto for Violoncello and Orchestra A minor"));
-        amiwos.add(new Amiwo("Delibes", "Lakmé - Flower Duet"));
+        amiwos.add(new Amiwo(getString(R.string.artist_holy), getString(R.string.amiwo_gospel)));
+        amiwos.add(new Amiwo(getString(R.string.artist_john), getString(R.string.amiwo_bigger)));
+        amiwos.add(new Amiwo(getString(R.string.artist_kally), getString(R.string.amiwo_noctare)));
+        amiwos.add(new Amiwo(getString(R.string.artist_josh), getString(R.string.amiwo_laughter)));
+        amiwos.add(new Amiwo(getString(R.string.artist_levi), getString(R.string.amiwo_trans)));
+        amiwos.add(new Amiwo(getString(R.string.artist_nath), getString(R.string.amiwo_impromptu)));
+        amiwos.add(new Amiwo(getString(R.string.artist_pet), getString(R.string.amiwo_Life)));
+        amiwos.add(new Amiwo(getString(R.string.artist_max), getString(R.string.amiwo_preach) ));
+        amiwos.add(new Amiwo(getString(R.string.artist_savvy), getString(R.string.amiwo_symphony)));
+        amiwos.add(new Amiwo(getString(R.string.amiwo_liftings), getString(R.string.amiwo_race)));
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the
@@ -67,9 +67,9 @@ public class RealMusicActivity extends AppCompatActivity implements ListView.OnI
         String composerForPlaying = currentAmiwo.getNameOfComposer();
 
         // Sending the name of composer and his opus to PlayerActivity.
-        Intent opusIntent = new Intent(this, PlayerActivity.class);
-        opusIntent.putExtra("opus", amiwoForPlaying);
-        opusIntent.putExtra("composer", composerForPlaying);
-        startActivity(opusIntent);
+        Intent amiwoIntent = new Intent(this, PlayerActivity.class);
+        amiwoIntent.putExtra("amiwo", amiwoForPlaying);
+        amiwoIntent.putExtra("composer", composerForPlaying);
+        startActivity(amiwoIntent);
     }
 }

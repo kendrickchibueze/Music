@@ -24,16 +24,16 @@ public class ClassicalActivity extends AppCompatActivity implements ListView.OnI
         ArrayList<Amiwo> amiwos = new ArrayList<Amiwo>();
 
         // Adding opuses to an array.
-        amiwos.add(new Amiwo("Beethoven", "Symphony No. 9"));
-        amiwos.add(new Amiwo("Beethoven", "Symphony No. 3"));
-        amiwos.add(new Amiwo("Beethoven", "Sonata No. 8  \"Pathétique\""));
-        amiwos.add(new Amiwo("Mozart", "Oboe Concerto in C major"));
-        amiwos.add(new Amiwo("Mozart", "Sonata for Two Pianos in D"));
-        amiwos.add(new Amiwo("Mozart", "Piano Sonata No 16 C major "));
-        amiwos.add(new Amiwo("Haydn", "Piano Concerto No. 11 in D major"));
-        amiwos.add(new Amiwo("Haydn", "Symphony no. 94 \"Surprise\" "));
-        amiwos.add(new Amiwo("Haydn", "Symphony No. 45 \"Farewell\""));
-        amiwos.add(new Amiwo("Boccherini", "Minuet in E Major"));
+        amiwos.add(new Amiwo(getString(R.string.artist_holy), getString(R.string.amiwo_gospel)));
+        amiwos.add(new Amiwo(getString(R.string.artist_john), getString(R.string.amiwo_bigger)));
+        amiwos.add(new Amiwo(getString(R.string.artist_kally), getString(R.string.amiwo_noctare)));
+        amiwos.add(new Amiwo(getString(R.string.artist_josh), getString(R.string.amiwo_laughter)));
+        amiwos.add(new Amiwo(getString(R.string.artist_levi), getString(R.string.amiwo_trans)));
+        amiwos.add(new Amiwo(getString(R.string.artist_nath), getString(R.string.amiwo_impromptu)));
+        amiwos.add(new Amiwo(getString(R.string.artist_pet), getString(R.string.amiwo_Life)));
+        amiwos.add(new Amiwo(getString(R.string.artist_max), getString(R.string.amiwo_preach) ));
+        amiwos.add(new Amiwo(getString(R.string.artist_savvy), getString(R.string.amiwo_symphony)));
+        amiwos.add(new Amiwo(getString(R.string.amiwo_liftings), getString(R.string.amiwo_race)));
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the
