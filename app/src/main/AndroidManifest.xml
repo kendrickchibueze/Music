@@ -19,13 +19,16 @@
         </activity>
         <activity
             android:name=".BaroqueActivity"
-            android:label="@string/baroque_music" />
+            android:label="@string/baroque_music"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".ClassicalActivity"
-            android:label="@string/classical_music" />
+            android:label="@string/classical_music"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".RealMusicActivity"
-            android:label="@string/real_music" />
+            android:label="@string/real_music"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".PlayerActivity"
             android:label="Playing"

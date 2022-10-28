@@ -20,16 +20,16 @@ public class PlayerActivity extends AppCompatActivity {
 
     public void playing() {
         // Get extras from Intent.
-        Intent opusIntent = getIntent();
+        Intent amiwoIntent = getIntent();
 
         // Set the name of amiwo for playing.
-        TextView opusTextView = findViewById(R.id.player_amiwo);
-        String opusForPlaying = opusIntent.getStringExtra("opus");
-        opusTextView.setText(opusForPlaying);
+        TextView amiwoTextView = findViewById(R.id.player_amiwo);
+        String amiwoForPlaying = amiwoIntent.getStringExtra("amiwo");
+        amiwoTextView.setText(amiwoForPlaying);
 
         // Set the name of composer for playing.
         TextView composerTextView = findViewById(R.id.player_composer);
-        String composerForPlaying = opusIntent.getStringExtra("composer");
+        String composerForPlaying = amiwoIntent.getStringExtra("composer");
         composerTextView.setText(composerForPlaying);
     }
 }
